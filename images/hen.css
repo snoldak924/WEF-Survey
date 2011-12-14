@@ -1,0 +1,204 @@
+.bold {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.bold3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.reg {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-STYLE: normal; FONT-FAMILY: Arial, Times New Roman, Times, serif; TEXT-ALIGN: justify
+}
+.reg A:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: #2363a6; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.reg A:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: #2363a6; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.reg A:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: #ff0000; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.regsmall {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.regsmallw {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.boldred {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #bd0c08; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.boldred A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #bd0c08; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.boldred A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #bd0c08; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.boldred A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #bd0c08; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #0000ff; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.linke A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #0000ff; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.link A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #0000ff; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.link A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #0000ff; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.boldblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #0648a2; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.boldblue A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #0648a2; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.boldblue A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #0648a2; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.boldblue A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #0648a2; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.boldblacknu {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.boldblack {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.boldblack A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.boldblack A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.boldblack A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.boldsm {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.boldsmw {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.boldsm A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.boldsm A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.regsmallbut {
+	BORDER-RIGHT: #333333 1px solid; BORDER-TOP: #333333 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 14px; BORDER-LEFT: #333333 1px solid; COLOR: #11467c; BORDER-BOTTOM: #333333 1px solid; FONT-STYLE: normal; FONT-FAMILY: Arial; HEIGHT: 25px
+}
+.boldsmblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #4e83d0; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.title {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-ALIGN: center
+}
+.title A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.title A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.title A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.title A:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.titleb {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ff9900; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.titleb A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.titleb A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.titleb A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.titleb A:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.cpr {
+	FONT-SIZE: 9px; COLOR: #000000; FONT-FAMILY: Arial
+}
+.cpr A:link {
+	FONT-SIZE: 9px; COLOR: #0648a2; FONT-FAMILY: Arial
+}
+.cpr A:visited {
+	FONT-SIZE: 9px; COLOR: #0648a2; FONT-FAMILY: Arial
+}
+.line {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 10pt; BORDER-LEFT: 0px; COLOR: #ff0000; BORDER-BOTTOM: #333333 1px dotted; FONT-FAMILY: Arial; TEXT-ALIGN: right
+}
+.boldsml {
+	BORDER-RIGHT: #000000 0px solid; BORDER-TOP: #000000 0px solid; FONT-WEIGHT: bold; FONT-SIZE: 10pt; BORDER-LEFT: #000000 0px solid; BORDER-BOTTOM: #000000 1px solid; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.box {
+	BORDER-RIGHT: #cccccc 0px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 0px solid; BORDER-BOTTOM: #cccccc 0px solid
+}
+.boldsmbox {
+	BORDER-RIGHT: #dddddd 1px dotted; BORDER-TOP: #dddddd 1px dotted; FONT-WEIGHT: bold; FONT-SIZE: 10pt; BORDER-LEFT: #dddddd 1px dotted; BORDER-BOTTOM: #dddddd 0px dotted; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.but {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 10pt; BACKGROUND-IMAGE: url(images/b-bgr.gif); BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #666666 1px solid; FONT-STYLE: normal; FONT-FAMILY: Arial; HEIGHT: 25px
+}
+.regj {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-ALIGN: justify
+}
+.boldblue2 {
+	PADDING-RIGHT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #0648a2; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-ALIGN: right
+}
+.boldbluebig {
+	PADDING-RIGHT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #0648a2; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.bold2 {
+	PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.boldblue3 {
+	PADDING-RIGHT: 15px; FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #0648a2; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-ALIGN: right; TEXT-DECORATION: underline
+}
+.spaceleft {
+	PADDING-LEFT: 10px
+}
+.regsmallbutnb {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #11467c; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.regsmallbutnb A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #11467c; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.regsmallbutnb A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #11467c; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.regsmallbutnb A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #11467c; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.blue {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: #0648a2; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+.titleblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #003399; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-ALIGN: center
+}
+.title2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-ALIGN: center
+}
+.style2 {
+	FONT-WEIGHT: bold; COLOR: #0648a2
+}
+.boldrednu {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #bd0c08; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.boldrednu A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #bd0c08; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.boldrednu A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #bd0c08; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.boldrednu A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #bd0c08; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.boldredsm {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #bd0c08; FONT-STYLE: normal; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}

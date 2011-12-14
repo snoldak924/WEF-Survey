@@ -1,0 +1,87 @@
+body{font-family:"Arial","Helvetica"}
+img{border:none;}
+#container{margin:0 auto; width:100%; background:#fff}
+#header{background:#ccc; padding:20px}
+#header h1{margin:0}
+#navigation{float:left; width:100%; background:#333}
+#navigation ul{margin:0; padding:0}
+#navigation ul li{list-style-type:none; display:inline}
+#navigation li a{display:block; float:left; padding:5px 10px; color:#fff; text-decoration:none; border-right:1px solid #fff}
+#navigation li a:hover{background:#383}
+#content-container{float:left; width:100%; background:#FFF}
+#content{clear:left; float:left; padding:20px 0; margin:0 270px 0 10px; display:inline}
+#content h2{margin:0}
+#content-wide{clear:left; float:left; width:98%; padding:20px 0; margin:0 10px 0 10px; display:inline}
+#content-wide h2{margin:0}
+#aside{float:right; width:250px; margin-left:-270px; padding:20px 0; display:inline}
+#aside h3{margin:0}
+#footer{clear:left; background:#ccc; text-align:right; padding:20px; height:1%}
+#facility-form{float:left; width:63%;margin-right:5px;}
+#facility-form input[type="text"], #facility-form input[type="url"]{display:block; width:23em}
+#facility-form ul li ul li input[type="text"], #facility-form ul li ul li input[type="url"]{display:block; width:20em}
+#comments,#contacts{float:left; width:35%;}
+#contacts{margin-bottom:15px;}
+#facility-form ul li ul li{list-style-type:none}
+.spch-bub-inside, 
+.spch-bub-outside{ position:relative}
+a.spch-bub-inside, 
+a.spch-bub-outside{ color:#00F;  text-decoration:none}
+.spch-bub-inside em, 
+.spch-bub-outside em{ font-style:normal}
+.spch-bub-inside em{ background:#00F;  color:#FFF;  padding:0 0.4em;  -moz-border-radius:0.25em;  -webkit-border-radius:0.25em;  border-radius:0.25em;  position:relative}
+.spch-bub-inside .point, 
+.spch-bub-outside .point{ width:0;  height:0;  position:absolute;  top:1.1em;  left:0.4em;  display:block;  border-left:0.45em solid #00F;  border-bottom:0.45em solid #FFF;  border-bottom:0.45em solid rgba(0,0,0,0);  overflow:hidden}
+.spch-bub-outside{ padding-left:2.0em}
+.spch-bub-outside .bubble{ top:0;  left:0;  display:block;  position:absolute;  height:1.1em;  width:1.8em;  background:#00F;  -moz-border-radius:0.25em;  -webkit-border-radius:0.25em;  border-radius:0.25em}
+a.spch-bub-inside:hover, 
+a.spch-bub-outside:hover{ color:#F00}
+a.spch-bub-inside:hover em, 
+a.spch-bub-outside:hover .bubble{ cursor:pointer;  background:#F00;  color:#FF0}
+a.spch-bub-inside:hover .point, 
+a.spch-bub-outside:hover .point{ border-left:0.5em solid #F00}
+span.spch-bub-outside{ height:1.5em;  width:0}
+.good{border:#4f9 3px solid; background-color:#cfe}
+.bad{border:#f77 3px solid; background-color:#fcd}
+.msg{margin:10px; padding:5px}
+.changed{border:#185787 3px solid; background-color:#bFe5ef;padding:3px;}
+.comment{border:1px solid #ddd; padding:10px; margin:5px}
+.ui-button .ui-button-text{line-height:1em !important}
+tr.approved,tr.rejected{color:#a8a8c8;}
+tr.approved:hover,tr.rejected:hover{color:#000;}
+.large-button{
+padding: 10px 20px;
+font-size: 1.5em;
+}
+.labelChanged{
+	border:#185787 3px solid !important;padding:3px !important;
+}
+.labelChanged.ui-state-active{
+	background:#fff !important;
+}
+li{
+margin-top:.5em;
+}
+.ui-button-text .check,.ui-button-text .ex{
+color:#8a8a8a;
+}
+.ui-state-active .ex,.redex{
+color:#991111;
+}
+.ui-state-active .check,.greencheck{
+color:#119911;
+}
+#facility-form .numeric{
+width:7em !important;
+ display:inline !important;
+}
+#facility-form .phone{
+width:9em !important;
+ display:inline !important;
+}
+#facility-form .short{
+width:11em !important;
+ display:inline !important;
+}
+#permissions li{
+display: inline; margin-right:10px;
+}
