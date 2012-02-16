@@ -68,7 +68,7 @@ if(!empty($_GET['state']) || $page=='Edits'){ ?>
 				<li><a href="edits.php">Edits</a></li><?php
 			} ?>
 			<li><a href="myaccount.php">My Account</a></li>
-			<li><a href="contact_us.php">Contact Us</a></li>
+			<li><a href="contact_us.php">Contact Us / HELP</a></li>
 			<li><a href="logout.php">Log out</a></li>
 		</ul>
 	</div><?php

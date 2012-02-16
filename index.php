@@ -41,7 +41,7 @@ if($Auth->loggedIn()){ ?>
 			<th>Sludge disposed in landfill</th>
 			<th>Sludge disposed in surface unit</th>
 			<th>Authority</th>
-			<th><img src="/images/view.png" alt="View"/></th>
+			<th><img src="/images/edit.png" alt="View"/></th>
 			<th><img src="/images/comments.png" alt="Comments"/></th>
 			<th>Edits</th>
 			<th>Approved</th>
@@ -57,7 +57,7 @@ if($Auth->loggedIn()){ ?>
 			<tr>
 			<td><?=$facility->NPDES; ?></td>
 			<td><?=$facility->FRS_ID; ?></td>
-			<td><?=nonempty(array($facility->name,$facility->authority));?></td>
+			<td><?=nonempty(array($facility->name,$facility->authority));?><?php if(in_array('SurveyMonkey',data_sources2($facility->id))){?> - SurveyMonkey<?php } ?></td>
 			<td><?=(nonempty(array($facility->facility_address,$facility->facility_city))?$facility->facility_address.', '.$facility->facility_city:'')?></td>
 			<td><?=$facility->facility_county; ?></td>
 			<td><?=$facility->facility_phone; ?></td>
@@ -75,7 +75,7 @@ if($Auth->loggedIn()){ ?>
 			<td><?=pretty_num($facility->sludge_disposed_landfill);?></td>
 			<td><?=pretty_num($facility->sludge_disposed_unit);?></td>
 			<td><?=$facility->authority; ?></td>
-			<td><a href="facility.php?id=<?=$facility->id; ?>" target="_blank" ><img src="/images/view.png" alt="View" /></a></td>
+			<td><a href="facility.php?id=<?=$facility->id; ?>" target="_blank" ><img src="/images/edit.png" alt="View" /></a></td>
 			<td><a class="spch-bub-inside" href="/facility.php?id=<?=$facility->id; ?>"  target="_blank" ><span class="point"></span><em><?=$comments; ?></em></a></td>
 			<td><?=$edits; ?></td>
 			<td><?php 
@@ -113,10 +113,10 @@ if($Auth->loggedIn()){ ?>
 	<div style="width:300px;float:left">
 	<h2>Create Account</h2>
 	<form action="/" method="post">
-	<p><label for="email">Email:</label> <input type="text" name="email" value="" id="email" /></p>
-	<p><label for="password">Password:</label> <input type="password" name="password" value="" id="password" /></p>
+	<p><label for="email">Email:</label> <input type="text" name="email" value="" id="email-create" /></p>
+	<p><label for="password">Password:</label> <input type="password" name="password" value="" id="password-create" /></p>
 	<p><label for="invite">Invite Code:</label> <input type="text" name="invite" value="" id="invite" /></p>
-	<p><input type="submit" name="btnlogin" value="Create Account" id="btnlogin" /></p>
+	<p><input type="submit" name="btnlogin" value="Create Account" id="btnCreate" /></p>
 	<input type="hidden" name="form" value="create">
 	</form>
 	</div>

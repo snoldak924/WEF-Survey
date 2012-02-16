@@ -71,8 +71,9 @@ if(!empty($_POST['form'])){
 			$contact->city = $_POST['city'];
 			$contact->state = $_POST['state'];
 			$contact->zip = $_POST['zip'];
-			$contact->email = $_POST['organization'];
+			$contact->email = $_POST['email'];
 			$contact->position = $_POST['position'];
+			$contact->organization = $_POST['organization'];
 			$contact->notes = $_POST['notes'];
 			$contact->added_by = $Auth->user->id;
 			$contact->insert();
@@ -133,7 +134,8 @@ if(!empty($_POST['form'])){
 			$edit->waste_import = postVar('waste_import');
 			if(!count($badmsg)){
 				$edit->insert();
-				$goodmsg[]='Edit Submitted.';
+				unset($edit);
+				$goodmsg[]='Edit Submitted.  The facility will be updated when a moderator approves your edit.';
 			}
 		}else if($_POST['form']=='edit' && $Auth->isModerator()){
 			if($_POST['submit']=='approve'){

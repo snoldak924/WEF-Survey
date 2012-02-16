@@ -59,7 +59,7 @@ function comments($facility_id){
 
 function contacts($facility_id){
 	global $Auth;
-	$contacts = DBObject::glob('Contact',"SELECT * FROM contacts WHERE facility_id='" . intval($_GET['id']) . "' ORDER BY name ASC");
+	$contacts = DBObject::glob('Contact',"SELECT * FROM contacts WHERE facility_id='" . $facility_id . "' ORDER BY name ASC");
 	if(count($contacts)){
 		echo '<table>';
 		echo "\n";
@@ -67,7 +67,7 @@ function contacts($facility_id){
 			echo '<tr><td><a href="contact.php?id=' .
 			$contact->id .
 			'" target="_blank">' .
-			nonempty(array($contact->name,$contact->position,$contact->organization)) .
+			nonempty(array($contact->name,$contact->position,$contact->organization,$contact->email,$contact->phone_w)) .
 			'</a></td>';
 			echo "\n";
 			echo '<td>';
@@ -135,14 +135,20 @@ function data_sources($facility_id){
 	global $db;
 	echo implode(', ', $db->getValues("SELECT name FROM data_source_map LEFT JOIN data_sources ON data_sources.id=data_source_map.source_id WHERE data_source_map.facility_id=$facility_id"));
 }
+function data_sources2($facility_id){
+	global $db;
+	return $db->getValues("SELECT name FROM data_source_map LEFT JOIN data_sources ON data_sources.id=data_source_map.source_id WHERE data_source_map.facility_id=$facility_id");
+}
 function input($field,$restrict='none',$type='text'){
 	global $facility,$edit,$Auth;
 	$field2 = ($edit==null?$facility->$field:$edit->$field);
-	$return = "<input class='$type' type='text' name='$field' value='";
+	$return = "<input type='text' name='$field' value='";
 	$return .= ($type=='numeric'?number_format($field2,2):($type=='phone'?format_phone($field2):$field2));
-	$return .= "' ";
+	$return .= "' class='$type";
 	if($facility->$field!=$field2){
-		$return .= ' class="changed" title="Original: ' . ($type=='numeric'?number_format($facility->$field,2):$facility->$field).'"';
+		$return .= " changed' title='Original: " . ($type=='numeric'?number_format($facility->$field,2):$facility->$field)."'";
+	}else{
+		$return .= "'";
 	}
 	$return .= '/>';
 	return $return;
@@ -231,108 +237,3 @@ function stabilization($number){
 	);
 	return ucfirst($map[$number]);
 }
-/*
-function edit_radios($name,$values,$default='',$restrict='none'){
-	global $facility,$edit,$Auth;
-	$return = '<div class="jui'.
-	(($facility->$field!=$edit->$field)?' radioChanged':'').
-	'"'.(($restrict=='notMABA' && $Auth->isMABA())?' style="display:none"':'').
-	' title="Original: ' . $facility->$field . '">';
-	foreach($values as $key=>$value){
-		$return.= "<input ".
-		(($name=="anaerobic_digestion" || $name=="thermophilic_ad")?"onclick='toggle_AD_details();' ":'').
-		"type='radio' name='$name' value='$value' id='$name-$key' ".
-		($value==$default?' checked="checked" ':'').
-		" /><label for='$name-$key'>".
-		ucfirst($value).
-		"</label>";
-	}
-	$return.= '</div>';
-	return $return;
-}
-function restrict_field($title,$field,$restrict='MABA',$input_type='facility',$numeric=0){
-	global $Auth;
-	$return = "<li";
-		switch($restrict){
-		case 'notMABA':
-			$return.= $Auth->isMABA()?' style="display:none"':'';
-			break;
-		case 'MABA':
-			$return.= $Auth->isMABA() || $Auth->isAdmin()?'':' style="display:none"';
-			break;
-		case 'none':
-		default:
-			$return.= '';
-	}
-	$return .= "><strong>$title: </strong>".($input_type=='facility'?facility_input($field,$restrict,$numeric):edit_input($field,$restrict,$numeric)).'</li>';
-	
-	return $return;
-}
-function restrict_radios($title,$field,$restrict='MABA',$input_type=''){
-	global $Auth,$facility,$edit;
-	$return = "<li";
-		switch($restrict){
-		case 'notMABA':
-			$return.= $Auth->isMABA()?' style="display:none"':'';
-			break;
-		case 'MABA':
-			$return.= $Auth->isMABA() || $Auth->isAdmin()?'':' style="display:none"';
-			break;
-		case 'none':
-		default:
-			$return.= '';
-	}
-	$return .= "><strong>$title: </strong>".
-	(radios($field,array('Y','N','UNKNOWN'),(($edit==null || $input_type='facility')?$facility->$field:$edit->$field),$restrict)).
-	'</li>';
-	return $return;
-}
-function edit_input($field,$restrict='none',$numeric=0){
-	global $facility,$edit,$Auth;
-	$return = '<input type="';
-	switch($restrict){
-		case 'MABA':
-			$return.= $Auth->isMABA()?'text':'hidden';
-			break;
-		case 'notMABA':
-			$return .= !$Auth->isMABA() || $Auth->isAdmin()?'text':'hidden';
-			break;
-		case 'none':
-		default:
-			$return .= 'text';
-	}
-	$return .= '" name="' .
-	$field .
-	'" value="' .
-	($numeric?number_format($edit->$field,2):$edit->$field) . '" ' .
-	(($facility->$field!=$edit->$field)?' class="changed"':'') .
-	' title="Original: ' . ($numeric?number_format($facility->$field,2):$facility->$field) . '"/>';
-	return $return;
-}
-function facility_input($field,$restrict='none',$numeric=0){
-	global $facility,$Auth;
-	$return= '<input type="';
-	switch($restrict){
-		case 'MABA':
-			$return.= ($Auth->isMABA() || $Auth->isAdmin())?'text':'hidden';
-			break;
-		case 'notMABA':
-			$return.= !$Auth->isMABA()?'text':'hidden';
-			break;
-		case 'none':
-		default:
-			$return.= 'text';
-	}
-	$return.= '" name="' . $field . '" value="' . ($numeric?number_format($facility->$field,2):$facility->$field). '" />';
-	return $return;
-}
-function radios($name,$values,$default='',$restrict='none'){
-	global $Auth;
-	$return= '<div class="jui"'.(($restrict=='notMABA' && $Auth->isMABA())?' style="display:none"':'').'>';
-	foreach($values as $key=>$value){
-		$return.= "<input ".(($name=="anaerobic_digestion" || $name=="thermophilic_ad")?"onclick='toggle_AD_details();' ":'')."type='radio' name='$name' value='$value' id='$name-$key' ".(($value==$default)?' checked="checked" ':'')." /><label for='$name-$key'>".ucfirst($value)."</label>";
-	}
-	$return.= '</div>';
-	return $return;
-}
-*/

@@ -1,8 +1,8 @@
 <?php 
-$page = 'Manage Permissions';
+$page = 'Manage State Permissions';
 $moderator=true;
 require 'top.php'; ?>
-<h2>Manage Permissions</h2><?php 
+<h2>Manage State Permissions</h2><?php 
 if($Auth->loggedIn() && !empty($_GET['id'])){ 
 	$user = new User();
 	$user->select($_GET['id']);

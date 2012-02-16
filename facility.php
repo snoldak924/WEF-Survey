@@ -15,7 +15,7 @@ if($facility->ok()){ ?>
 	<?=li('FRS_ID','','EPA Registry ID','','short');?>
 	<li><strong>NPDES #: </strong><?=$facility->NPDES;?></li>
 	<?=li('name');?>
-	<? /*<li><strong>Data Sources: </strong><?=data_sources($facility->id);?></li> */ ?>
+	<li><strong>Data Sources: </strong><?=data_sources($facility->id);?></li>
 	<?=li('authority','Authority/Operator');?>
 	<li><strong>Facility Address</strong>
 	<ul>
@@ -77,7 +77,7 @@ if($facility->ok()){ ?>
 	<h3><a href="#">Phase 2</a></h3>
 	<div>
 	<ul>
-	<?=li('avg_daily_biogas_production','Average Daily Biogas Production','MCF/day','notMABA','numeric');?>
+	<?=li('avg_daily_biogas_production','Biogas Production','MCF/day','notMABA','numeric');?>
 	<li><strong>Stabilization: </strong><?php 
 		if($Auth->loggedIn()){ ?>
 		<select name="stabilization" >

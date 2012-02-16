@@ -75,7 +75,7 @@ if($edit->ok()){
 	</ul>
 	<strong>Phase 2</strong>
 	<ul>
-	<?=li('avg_daily_biogas_production','Average Daily Biogas Production','MCF/day','notMABA','numeric');?>
+	<?=li('avg_daily_biogas_production','Biogas Production','MCF/day','notMABA','numeric');?>
 	<?=li('stabilization');?>
 	<?=li('sludge_production','Sludge production, total','dry tons/year','MABA','numeric');?>
 	<?=li('sludge_use','Sludge land applied','dry tons/year','MABA','numeric');?>
@@ -90,10 +90,10 @@ if($edit->ok()){
 	<?=li_radio('methane_use_web');?>
 	<?=li_radio('beneficial_biosolids_reuse_web');?>
 	<?=li('wastewater_flow','','MMGal/year','none','numeric');?>
-	<li><strong>Facility Status: </strong>
+	<li><strong>IS THIS FACILITY ENTRY COMPLETE?(don't forget to approve the edit)</strong>
 	<div class="jui">
-	<input type="radio" name="approved" value="1" id="approved-1" <?=($facility->approved=="1")?' checked="checked"':''; ?>/><label for="approved-1">Approved</label>
-	<input type="radio" name="approved" value="0" id="approved-0" <?=($facility->approved=="0")?' checked="checked"':''; ?>/><label for="approved-0">Not Approved</label>
+	<input type="radio" name="approved" value="1" id="approved-1" <?=($facility->approved=="1")?' checked="checked"':''; ?>/><label for="approved-1">Yes</label>
+	<input type="radio" name="approved" value="0" id="approved-0" <?=($facility->approved=="0")?' checked="checked"':''; ?>/><label for="approved-0">No</label>
 	</div>
 	</li></ul>
 	<div class="jui">
@@ -101,7 +101,7 @@ if($edit->ok()){
 	<input type="radio" name="status" value="approved" id="approved" <?=($edit->status=="approved")?' checked="checked"':''; ?>/><label for="approved">Approved</label>
 	<input type="radio" name="status" value="rejected" id="rejected" <?=($edit->status=="rejected")?' checked="checked"':''; ?>/><label for="rejected">Rejected</label>
 	*/ ?></div>
-	<button type="submit" name="submit" value="draft" class="large-button">Update Edit</button>
+	<?php /*<button type="submit" name="submit" value="draft" class="large-button">Update Edit</button> */ ?>
 	<button type="submit" name="submit" value="approve" class="large-button">Approve Edit</button>
 	<button type="submit" name="submit" value="reject" class="large-button">Reject Edit</button>
 	

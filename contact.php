@@ -42,7 +42,7 @@ if($Auth->loggedIn()){
 		<input type="hidden" name="facility_id" value="<?php echo intval($_GET['facility']); ?>" />
 		<input type="hidden" name="form" value="add_contact" />
 		<input type="submit" value="Save" />
-		<input type="button" value="Cancel" onclick="window.location = '<?php echo $_SERVER['HTTP_REFERER']; ?>'" />
+		<input type="button" value="Cancel" onclick="window.close()" />
 		</form><?php
 	}else{
 		$contact->select(intval($_GET['id']));
@@ -87,7 +87,7 @@ if($Auth->loggedIn()){
 				<input type="hidden" name="form" value="edit_contact" />
 				<input type="hidden" name="id" value="<?=$contact->id; ?>" />
 				<input type="submit" value="Save" />
-				<input type="button" value="Cancel" onclick="window.location = '<?php echo $_SERVER['HTTP_REFERER']; ?>'" />
+				<input type="button" value="Cancel" onclick="window.close();" />
 				</form><?php
 			}else{ ?>
 				<table>

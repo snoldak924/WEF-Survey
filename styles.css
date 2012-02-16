@@ -1,7 +1,7 @@
 body{font-family:"Arial","Helvetica"}
 img{border:none;}
 #container{margin:0 auto; width:100%; background:#fff}
-#header{background:#ccc; padding:20px}
+#header{background:#ccc; padding:7px 20px}
 #header h1{margin:0}
 #navigation{float:left; width:100%; background:#333}
 #navigation ul{margin:0; padding:0}
@@ -15,7 +15,7 @@ img{border:none;}
 #content-wide h2{margin:0}
 #aside{float:right; width:250px; margin-left:-270px; padding:20px 0; display:inline}
 #aside h3{margin:0}
-#footer{clear:left; background:#ccc; text-align:right; padding:20px; height:1%}
+#footer{clear:left; background:#ccc; text-align:right; padding:5px; height:1%}
 #facility-form{float:left; width:63%;margin-right:5px;}
 #facility-form input[type="text"], #facility-form input[type="url"]{display:block; width:23em}
 #facility-form ul li ul li input[type="text"], #facility-form ul li ul li input[type="url"]{display:block; width:20em}

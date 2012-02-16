@@ -1,11 +1,11 @@
 		</div>
-		<div id="footer">Copyright &copy; Effluential Synergies, 2011</div>
+		<div id="footer">Copyright &copy; 2012 Effluential Synergies</div>
 	</div>
 </div>
 <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="/js/jquery-ui-1.8.16.custom.min.js"></script>
 <script type="text/javascript">
-<?php if($page=='Manage Permissions'){ ?>
+<?php if($page=='Manage State Permissions'){ ?>
 function toggleRegion(region){
 	switch(region){<?php 
 		foreach($EPARegions as $region => $EPAstates){
